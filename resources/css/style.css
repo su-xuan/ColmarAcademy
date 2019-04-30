@@ -1,0 +1,159 @@
+/*universal version*/
+* {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+.container {
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+.lightGrey {
+  background: lightGrey;
+}
+
+h2{
+  margin: 32px auto;
+  text-align: center;
+}
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+/*Header*/
+
+header .container {
+  height: 64px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  z-index: 100;
+}
+
+header .logo {
+  height: 32px;
+}
+
+nav {
+
+}
+nav ul{
+  display: flex;
+
+}
+ul li {
+  margin: 0 8px;
+}
+/*Starting Part*/
+.startingPart {
+  position: relative;
+  top: 64px;
+
+}
+.startingPart .container {
+  justify-content: flex-start;
+  align-items: center;
+}
+.imageContainer {
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+/*Practice Part*/
+
+.practicePart .container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 64px;
+}
+
+.practicePart .imageContainer img {
+  display: block;
+  width: 100%;
+}
+.practicePart .imageContainer .text {
+  margin: 32px 0;
+}
+
+.practicePart .sideContainer{
+  border-left: 1px solid lightGrey;
+}
+.practicePart .item {
+  border-bottom: 1px solid lightGrey;
+}
+.item {
+  display: flex;
+}
+.item img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+.item .text {
+  align-self: center;
+}
+.first {
+  margin-top: 16px;
+}
+.last {
+  margin-bottom: 32px;
+}
+
+/*Learning Part*/
+.learningPart {
+  background-color: gainsboro;
+}
+
+.learningPart .container {
+  flex-wrap: wrap;
+  margin: 32px 72px;
+}
+.course  {
+  width: 30%;
+}
+.course img {
+  width: 100%;
+  height: auto;
+}
+.course .text {
+  background-color: white;
+}
+
+
+/*Thesis Exhibit Part*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 16px 24px;
+}
+footer nav span {
+  margin-left: 16px;
+}
