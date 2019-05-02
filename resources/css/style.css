@@ -2,7 +2,7 @@
 * {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .container {
   display: flex;
@@ -12,11 +12,8 @@
 .lightGrey {
   background: lightGrey;
 }
-h1 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 45px;
-}
-h2 {
+
+.practicePart h2, .exhibitPart h2 {
   font-family: 'Noto Sans', sans-serif;
   font-size: 32px;
   margin: 32px auto;
@@ -37,12 +34,11 @@ h2 {
 .mobile {
   display: none;
 }
-@media only screen and (max-width:470px) {
-  .desktop{
-  display: none;
-  }
-/*Header*/
 
+/*Header*/
+header {
+  padding: 0 24px;
+}
 header .container {
   height: 64px;
   background-color: white;
@@ -54,6 +50,8 @@ header .container {
 
 header .logo {
   height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 header nav>ul{
@@ -63,18 +61,22 @@ header nav>ul{
 header ul>li {
   margin: 0 8px;
 }
-
-
-header .mobile{
-    display: flex;
-    text-align: center;
+@media only screen and (max-width:470px) {
+  .desktop{
+  display: none;
   }
+  header .mobile{
+      display: flex;
+      text-align: center;
+    }
 }
+
+
+
 /*Starting Part*/
 .startingPart {
   position: relative;
   top: 64px;
-
 }
 .startingPart .container {
   justify-content: flex-start;
@@ -84,6 +86,10 @@ header .mobile{
   width: 60%;
   height: auto;
   padding: 32px 24px;
+}
+.startingPart h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 45px;
 }
 @media only screen and (max-width:470px) {
   .startingPart .container {
