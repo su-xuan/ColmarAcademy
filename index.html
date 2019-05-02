@@ -6,11 +6,12 @@
     <link rel="shortcut icon" href="resources/icons/ic-logo.ico">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Open+Sans" rel="stylesheet">
   </head>
   <body>
     <!--Header-->
     <header>
-      <div class="container">
+      <div class="container desktop">
         <div class="logo">
           <img src="resources/images/ic-logo.svg" alt="logo">
           <span class="dark">COLMAR</span>
@@ -24,7 +25,12 @@
             <li>Sign in</li>
           </ul>
         </nav>
-
+      </div>
+      <div class="container mobile">
+        <img src="resources/images/ic-logo.svg" alt="company logo">
+        <img src="resources/images/ic-on-campus.svg" alt="campus icon">
+        <img src="resources/images/ic-online.svg" alt="computer icon">
+        <img src="resources/images/ic-login.svg" alt="login icon">
       </div>
 
     </header>
@@ -89,7 +95,7 @@
       <!--Learning Part -->
       <div class="learningPart">
         <h2>Start learning</h2>
-        <div class="container courses">
+        <div class="container courses desktop">
           <div class="course">
             <img src="resources/images/course-software.jpg" alt="destops">
             <div class="text">
@@ -139,6 +145,26 @@
             </div>
           </div>
         </div>
+        <div class="courses mobile">
+          <div class="courseName">
+            <h3>Software engineering</h3>
+          </div>
+          <div class="courseName">
+            <h3>Computer art</h3>
+          </div>
+          <div class="courseName">
+            <h3>Design</h3>
+          </div>
+          <div class="courseName">
+            <h3>Data</h3>
+          </div>
+          <div class="courseName">
+            <h3>Business</h3>
+          </div>
+          <div class="courseName">
+            <h3>Marketing</h3>
+          </div>
+        </div>
       </div>
       <!-- Thesis Exhibit Part -->
       <div class="exhibitPart">
@@ -147,12 +173,12 @@
           <div class="imageContainer">
             <video src="resources/videos/thesis.mp4" controls>
             </video>
-            <div class="text">
+            <div class="text desktop">
               <h3>Reimagine urban</h3>
               <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
           </div>
-          <div class="sideContainer">
+          <div class="sideContainer desktop">
             <div class="lightGrey item">
               <img src="resources/images/thesis-fisma.jpg" alt="orientation">
               <div class="text">
@@ -168,8 +194,8 @@
               </div>
             </div>
 
-        </div>
-
+         </div>
+       </div>
       </div>
 
 
@@ -177,7 +203,7 @@
     <footer>
       <div class="container">
         <p>&copy 2016 Colmar Academy. All rights reserved</p>
-        <nav>
+        <nav class="destop">
           <span>Terms</span>
           <span>Privacy</span>
         </nav>

@@ -1,7 +1,7 @@
 /*universal version*/
 * {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
 }
 .container {
@@ -12,8 +12,13 @@
 .lightGrey {
   background: lightGrey;
 }
-
-h2{
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 45px;
+}
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 32px;
   margin: 32px auto;
   text-align: center;
 }
@@ -23,6 +28,19 @@ h2{
   align-items: center;
   width: 40%;
 }
+.item {
+  display: flex;
+}
+.item .text {
+  align-self: center;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width:470px) {
+  .desktop{
+  display: none;
+  }
 /*Header*/
 
 header .container {
@@ -31,7 +49,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-
   z-index: 100;
 }
 
@@ -39,15 +56,19 @@ header .logo {
   height: 32px;
 }
 
-nav {
-
-}
-nav ul{
+header nav>ul{
   display: flex;
-
 }
-ul li {
+
+header ul>li {
   margin: 0 8px;
+}
+
+
+header .mobile{
+    display: flex;
+    text-align: center;
+  }
 }
 /*Starting Part*/
 .startingPart {
@@ -63,6 +84,18 @@ ul li {
   width: 60%;
   height: auto;
   padding: 32px 24px;
+}
+@media only screen and (max-width:470px) {
+  .startingPart .container {
+    display: block;
+  }
+  .imageContainer{
+    width: 100%;
+    margin-left: -24px;
+  }
+  .headline {
+    padding: 0 0 32px 16px;
+  }
 }
 
 /*Practice Part*/
@@ -87,23 +120,41 @@ ul li {
 .practicePart .item {
   border-bottom: 1px solid lightGrey;
 }
-.item {
-  display: flex;
-}
+
 .item img {
   width: 35%;
   height: auto;
   margin: 16px;
 }
-.item .text {
-  align-self: center;
-}
+
 .first {
   margin-top: 16px;
 }
 .last {
   margin-bottom: 32px;
 }
+@media only screen and (max-width:470px) {
+  .practicePart .imageContainer {
+    display: none;
+  }
+  .practicePart .sideContainer{
+    border: none;
+    width: 100%;
+  }
+  .practicePart .item {
+    border: none;
+    display: block;
+    width: 100%;
+  }
+  .item img {
+   width: 100%;
+   height: auto;
+   margin: 32px 16px;
+  }
+  .last{
+    background-color: white;
+  }
+  }
 
 /*Learning Part*/
 .learningPart {
@@ -125,10 +176,29 @@ ul li {
   background-color: white;
 }
 
+.courseName {
+  background-color: lightGrey;
+  display: block;
+  margin: 8px 16px;
 
+}
+.courseName h3 {
+  padding: 16px 0 24px 16px;
+}
+
+@media only screen and (max-width:470px) {
+.learningPart .mobile {
+  display: block;
+  }
+.learningPart h2{
+  margin: 32px 0 8px 0;
+}
+  }
 /*Thesis Exhibit Part*/
 
+@media only screen and (max-width:470px) {
 
+  }
 
 
 
