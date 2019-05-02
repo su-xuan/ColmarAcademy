@@ -2,7 +2,7 @@
 * {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .container {
   display: flex;
@@ -11,12 +11,13 @@
 }
 .lightGrey {
   background: lightGrey;
+
 }
 
 .practicePart h2, .exhibitPart h2 {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 32px;
-  margin: 32px auto;
+  font-size: 2rem;
+  margin: 2rem auto;
   text-align: center;
 }
 .sideContainer {
@@ -36,11 +37,9 @@
 }
 
 /*Header*/
-header {
-  padding: 0 24px;
-}
+
 header .container {
-  height: 64px;
+  height: 4rem;
   background-color: white;
   justify-content: space-between;
   align-items: center;
@@ -49,17 +48,19 @@ header .container {
 }
 
 header .logo {
-  height: 32px;
+  height: 2rem;
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }
 
 header nav>ul{
   display: flex;
+  margin-right: 1.5rem;
 }
 
 header ul>li {
-  margin: 0 8px;
+  margin: 0 .5rem;
 }
 @media only screen and (max-width:470px) {
   .desktop{
@@ -76,20 +77,41 @@ header ul>li {
 /*Starting Part*/
 .startingPart {
   position: relative;
-  top: 64px;
+  top: 4rem;
+  width: 100%;
 }
 .startingPart .container {
   justify-content: flex-start;
   align-items: center;
+
 }
 .imageContainer {
   width: 60%;
   height: auto;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
+}
+.startingPart .headline {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
 }
 .startingPart h1 {
   font-family: 'Noto Sans', sans-serif;
   font-size: 45px;
+  font-weight: bold;
+  color: rgb(100, 95, 90);
+}
+.startingPart h3 {
+  font-size: 1.2rem;
+  font-family:'Noto Sans', sans-serif;
+  padding: 2rem 0;
+  color: rgb(100, 95, 90);
+}
+button {
+  color: white;
+  background-color: rgb(100, 95, 90);
+  padding: .5rem 0;
+
 }
 @media only screen and (max-width:470px) {
   .startingPart .container {
@@ -115,6 +137,7 @@ header ul>li {
 .practicePart .imageContainer img {
   display: block;
   width: 100%;
+  height: auto;
 }
 .practicePart .imageContainer .text {
   margin: 32px 0;
@@ -125,6 +148,7 @@ header ul>li {
 }
 .practicePart .item {
   border-bottom: 1px solid lightGrey;
+  flex-grow: 1;
 }
 
 .item img {
