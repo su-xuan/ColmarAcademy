@@ -3,7 +3,9 @@
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
+  color: rgb(100, 95, 90);
 }
+
 .container {
   display: flex;
   text-align: left;
@@ -14,9 +16,10 @@
 
 }
 
-.practicePart h2, .exhibitPart h2 {
-  font-family: 'Noto Sans', sans-serif;
+h2 {
   font-size: 2rem;
+}
+ .learningPart h2, .exhibitPart h2 {
   margin: 2rem auto;
   text-align: center;
 }
@@ -52,6 +55,15 @@ header .logo {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.dark {
+  color: rgb(100, 95, 90);
+}
+.light {
+  color: darkGrey;
 }
 
 header nav>ul{
@@ -140,9 +152,15 @@ button {
   height: auto;
 }
 .practicePart .imageContainer .text {
-  margin: 32px 0;
+  margin: 2rem 0;
 }
-
+.practicePart h2 {
+  margin-bottom: 1.5rem;
+}
+p.quotes {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
 .practicePart .sideContainer{
   border-left: 1px solid lightGrey;
 }
@@ -150,18 +168,21 @@ button {
   border-bottom: 1px solid lightGrey;
   flex-grow: 1;
 }
-
-.item img {
+.img {
   width: 35%;
+  display: inline-block;
+  margin: 1rem;
+}
+.item img {
+  width: 100%;
   height: auto;
-  margin: 16px;
 }
 
 .first {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .last {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width:470px) {
   .practicePart .imageContainer {
@@ -176,10 +197,13 @@ button {
     display: block;
     width: 100%;
   }
-  .item img {
+  .item .img {
    width: 100%;
    height: auto;
-   margin: 32px 16px;
+   margin: 2rem 1rem;
+  }
+  .item .text {
+    margin-left: 1rem
   }
   .last{
     background-color: white;
