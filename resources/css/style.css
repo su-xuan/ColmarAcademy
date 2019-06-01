@@ -2,7 +2,7 @@
 * {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   color: rgb(100, 95, 90);
 }
 
@@ -15,12 +15,17 @@
   background: lightGrey;
 
 }
-
+h1 {
+  font-size: 3rem
+}
 h2 {
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.17rem;
+}
  .learningPart h2, .exhibitPart h2 {
-  margin: 2rem auto;
+  padding: 2rem 0;
   text-align: center;
 }
 .sideContainer {
@@ -32,8 +37,18 @@ h2 {
 .item {
   display: flex;
 }
+.item img {
+  max-width: 100%;
+  height: auto;
+}
 .item .text {
   align-self: center;
+  width: 65%;
+}
+.img {
+  width: 35%;
+  display: inline-block;
+  margin: 1rem;
 }
 .mobile {
   display: none;
@@ -74,16 +89,22 @@ header nav>ul{
 header ul>li {
   margin: 0 .5rem;
 }
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:960px) {
   .desktop{
   display: none;
   }
   header .mobile{
       display: flex;
       text-align: center;
+      justify-content: space-around;
     }
 }
 
+.imageContainer {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
 
 
 /*Starting Part*/
@@ -95,13 +116,9 @@ header ul>li {
 .startingPart .container {
   justify-content: flex-start;
   align-items: center;
+}
 
-}
-.imageContainer {
-  width: 60%;
-  height: auto;
-  padding: 2rem 1.5rem;
-}
+
 .startingPart .headline {
   display: flex;
   flex-direction: column;
@@ -109,12 +126,10 @@ header ul>li {
 }
 .startingPart h1 {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 45px;
   font-weight: bold;
   color: rgb(100, 95, 90);
 }
 .startingPart h3 {
-  font-size: 1.2rem;
   font-family:'Noto Sans', sans-serif;
   padding: 2rem 0;
   color: rgb(100, 95, 90);
@@ -125,16 +140,19 @@ button {
   padding: .5rem 0;
 
 }
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:960px) {
   .startingPart .container {
     display: block;
   }
   .imageContainer{
     width: 100%;
-    margin-left: -24px;
+    padding: 0 0 2rem 0;
   }
   .headline {
-    padding: 0 0 32px 16px;
+    padding: 0 0 2rem 1rem;
+  }
+  button {
+    padding: 1rem 0;
   }
 }
 
@@ -143,12 +161,15 @@ button {
 .practicePart .container {
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 64px;
+  padding-top: 4rem;
+}
+.practicePart .imageContainer {
+  border-right: 1px solid lightGrey;
 }
 
 .practicePart .imageContainer img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .practicePart .imageContainer .text {
@@ -160,22 +181,13 @@ button {
 p.quotes {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
+  font-size: .9rem;
+  color: black;
 }
-.practicePart .sideContainer{
-  border-left: 1px solid lightGrey;
-}
+
 .practicePart .item {
   border-bottom: 1px solid lightGrey;
   flex-grow: 1;
-}
-.img {
-  width: 35%;
-  display: inline-block;
-  margin: 1rem;
-}
-.item img {
-  width: 100%;
-  height: auto;
 }
 
 .first {
@@ -184,7 +196,7 @@ p.quotes {
 .last {
   margin-bottom: 2rem;
 }
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:960px) {
   .practicePart .imageContainer {
     display: none;
   }
@@ -198,12 +210,19 @@ p.quotes {
     width: 100%;
   }
   .item .img {
-   width: 100%;
+   width: calc(100% - 2rem);
    height: auto;
    margin: 2rem 1rem;
   }
+  .practicePart .mobile {
+    display: block;
+    margin: 0 auto;
+  }
+
   .item .text {
-    margin-left: 1rem
+    max: 100%;
+    margin: 0 auto;
+
   }
   .last{
     background-color: white;
@@ -217,10 +236,13 @@ p.quotes {
 
 .learningPart .container {
   flex-wrap: wrap;
-  margin: 32px 72px;
+  justify-content: center;
+  margin-top: -1rem;
+  padding-bottom: 1rem;
 }
 .course  {
-  width: 30%;
+  width: 25%;
+  padding: 1rem;
 }
 .course img {
   width: 100%;
@@ -228,56 +250,47 @@ p.quotes {
 }
 .course .text {
   background-color: white;
+  padding: 1rem;
+  height: 10.5rem;
+}
+.text h3 {
+  padding-bottom: 0.5rem;
+}
+.info {
+  padding:0.5rem 0;
 }
 
 .courseName {
   background-color: lightGrey;
   display: block;
-  margin: 8px 16px;
+  margin: .5rem 1rem;
 
 }
 .courseName h3 {
-  padding: 16px 0 24px 16px;
+  padding: 1rem 0 1.5rem 1rem;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width:960px) {
+.learningPart {
+  background-color: white;
+}
 .learningPart .mobile {
   display: block;
   }
 .learningPart h2{
-  margin: 32px 0 8px 0;
+  margin: 2rem 0 .5rem 0;
 }
   }
 /*Thesis Exhibit Part*/
-
-@media only screen and (max-width:470px) {
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Footer*/
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 16px 24px;
+  padding: 1rem 1.5rem;
+  width: calc(100% - 3rem);
 }
 footer nav span {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
